@@ -8,6 +8,16 @@ PROMPT='%F{cyan}%m%f  %n  %F{green}%~%f  %(0?.%F{green}.%F{red})%?%f
 %# '
 
 
+# History stuff - unlimited history with timestamps
+export SAVEHIST=1000000000
+export HISTSIZE=1000000000
+setopt INC_APPEND_HISTORY
+setopt EXTENDED_HISTORY
+setopt HIST_FIND_NO_DUPS
+export HISTFILE=~/.zsh_history
+alias history='fc -lt "[%F %T]" 1'
+
+
 #
 # Begin VI mode stuff
 #
