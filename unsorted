@@ -1,0 +1,2 @@
+# Need to run this once for repeating keys to work properly in idea vim
+defaults write -g ApplePressAndHoldEnabled -bool false
